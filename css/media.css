@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* 반응형 */
+
+@media(max-width:1210px) {
+
+    .header {
+        height: 60px;
+        position: relative;
+    }
+
+    .header>.logo {
+        font-size: 32px;
+    }
+
+    .h_icon {
+        gap: 12px;
+    }
+
+    .h_icon>img,
+    .ham>img {
+        width: 28px;
+    }
+
+    #banner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media(max-width:960px) {}
+
+@media (max-width: 768px) {
+
+
+    /* -----사이즈조정----- */
+    .header {
+        height: 60px;
+        position: relative;
+    }
+
+    .header>.logo {
+        font-size: 32px;
+    }
+
+    .h_icon {
+        gap: 12px;
+    }
+
+    .h_icon>img,
+    .ham>img {
+        width: 28px;
+    }
+
+    /* -----사이즈조정 끝----- */
+
+    .ham {
+        display: block;
+        cursor: pointer;
+    }
+
+    .h_nav {
+        /* 햄버거 메뉴 아래로 위치 조정 */
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150px;
+
+        background-color: #010E1D;
+
+        /* 애니메이션 설정 */
+        transform: translateY(20px);
+        transition: transform 0.3s, opacity 0s;
+        padding: 5px;
+
+        /* display:none 대신 사용*/
+        opacity: 0;
+
+        /* a의 border 크기 조정 */
+        align-items: flex-start;
+    }
+
+    .h_nav>a {
+        margin: 5px;
+    }
+
+    .h_nav.open {
+        /* 버튼 세로 정렬 */
+        display: flex;
+        flex-direction: column;
+
+        /* 애니메이션 설정 */
+        transform: translateY(60px);
+        opacity: 1;
+    }
+
+
+
+    /* footer */
+
+    .f_logo {
+        display: none;
+    }
+
+    #footer {
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    .f_content>a {
+        font-size: 14px;
+        padding: 2px;
+        margin: 0 4px;
+    }
+
+    .contact {
+        margin: 20px 0;
+        margin-bottom: 40px;
+    }
+
+    .contact>h4 {
+        color: #C8D1FF;
+        font-family: "Apple LiGothic Medium";
+        font-size: 20px;
+    }
+
+    .f_text>p {
+        color: #C8D1FF;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+
+    .f_icon>i {
+        color: #C8D1FF;
+        font-size: 24px;
+        cursor: pointer;
+        border: 4px;
+    }
+
+    #footer>p {
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 15px;
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+
+@media(max-width:480px) {
+}
+
+@media(max-width:320px) {}
